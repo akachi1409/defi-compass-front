@@ -1,0 +1,29 @@
+.authorHeader-contanier{
+    background-color: #000000;
+    background-image: url('../../../assets/img/basic/header/auth-header.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.authorHeader-contanier .authorHeader-overlay{
+    background-color: #000000;
+    opacity: 0.5;
+
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.authorHeader-contanier .authorHeader-layout{
+    min-height: 500px;
+    margin:auto;
+    display:flex;
+}
+.authorHeader-contanier .authorHeader-layout .authorHeader-title{
+    color: #FFFFFF;
+    font-family: "Helvetica", Sans-serif;
+    font-size: 4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
