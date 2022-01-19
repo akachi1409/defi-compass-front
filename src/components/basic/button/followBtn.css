@@ -4,6 +4,24 @@
     display:flex;
     margin: auto;
 }
+@media (max-width: 1024px){
+    .followBtn-layout{
+        width: 154px;
+        max-width: 154px;
+        display:flex;
+        margin: auto;
+        margin-top: 5em;
+    }
+}
+@media (max-width: 767px){
+    .followBtn-layout{
+        width: 139px;
+        max-width: 139px;
+        display:flex;
+        margin: auto;
+        
+    }
+}
 .followBtn-container{
     background-image:url('../../../assets/img/basic/followBtnLayout.png');
     background-position: 3px -1px;
