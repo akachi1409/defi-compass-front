@@ -1,18 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import React from 'react'
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import AuthorHeader from './components/basic/authorHeader/authorHeader.js'
-import Author from './components/author/author.js';
-import Footer from './components/basic/Footer/footer.js';
+// import Header from './components/header/header';
+import Auth from './page/Auth';
 function App() {
   return (
-    <div className="App">
-      test
-      <AuthorHeader/>
-      <Author/>
-      <Footer/>
-    </div>
+    <React.Suspense >
+      <Router>
+        <Switch>
+          <Route exact path="/author">
+            <Auth/>
+          </Route>
+        </Switch>
+      </Router>
+    </React.Suspense>
   );
 }
 
