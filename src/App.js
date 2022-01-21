@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 // import Header from './components/header/header';
 import Auth from './page/Auth';
 import NFTGenerator from './page/NFTGenerator'
-import Item from './page/Item'
+import ItemPage from './page/ItemPage'
 function App() {
   return (
     <React.Suspense >
@@ -15,11 +15,11 @@ function App() {
           <Route exact path="/author">
             <Auth/>
           </Route>
-          <Route exact path="/mogl-nft-generator">
+          <Route exact path="/generator">
             <NFTGenerator/>
           </Route>
-          <Route exact path="/mogl-item-details">
-            <Item/>
+          <Route exact path="/item">
+            <ItemPage/>
           </Route>
         </Switch>
       </Router>
